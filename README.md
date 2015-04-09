@@ -29,7 +29,7 @@ Trigger a notification by adding it to the Notifications collection
     });
  ```
  
- ### Showing notifications
+### Showing notifications
 Include the `{{> Notifications[ path = "a/default/path"][ text = "Default notification text"]}}` template inside your menu bar to display alerts
 
 - `path` is the default path for a notification if it's not stored in the collection
