@@ -1,7 +1,7 @@
 #Bootstrap styled notifications for Meteor
 
 ## Version
-0.0.1
+0.1.0
 
 ## Installation
 `meteor add vladbalan:notifications`
@@ -30,7 +30,8 @@ Trigger a notification by adding it to the Notifications collection
  ```
  
 ### Showing notifications
-Include the `{{> Notifications[ path = "a/default/path"][ text = "Default notification text"]}}` template inside your menu bar to display alerts
+Include the `{{> Notifications[ path="a/default/path"][ text="Default notification text"][ label="Click here for notifications!"]}}` template inside your menu bar to display alerts
 
 - `path` is the default path for a notification if it's not stored in the collection
 - `text` is the default notification text for notifications with no `text` property
+- `label` replaces the bell icon with your custom text

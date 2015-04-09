@@ -1,7 +1,11 @@
 <template name="Notifications">
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <span class="glyphicon glyphicon-bell {{#if notificationCount}}danger{{/if}}"></span>
+            {{#if label}}
+                <span class="notification-label {{#if notificationCount}}danger{{/if}}">{{{label}}}</span>
+            {{else}}
+                <span class="glyphicon glyphicon-bell {{#if notificationCount}}danger{{/if}}"></span>
+            {{/if}}
             {{#if notificationCount}}
                 <span class="badge badge-inverse danger">{{notificationCount}}</span>
             {{/if}}
